@@ -9,7 +9,7 @@ router.get("/", (req, res) => {
     // select * from fruits
     // db.select('*').from('fruits') <-- returns a promise
     db.select("*")
-        .from("produce")
+        .from("cars")
         .then(car => {
             res.status(200).json({ data: car });
         })
